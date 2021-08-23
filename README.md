@@ -16,7 +16,7 @@ __- lombok__
 public class TestPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
-        MessageAssist.loadConfig(ExampleMessage.class, this);
+        MessageAssist.loadConfig(TestMessage.class, this);
         
         ExampleMessage.MESSAGE_1.console();
         ExampleMessage.MESSAGE_2.console("a", "c", "b", "d");
