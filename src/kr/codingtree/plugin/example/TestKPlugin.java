@@ -1,12 +1,12 @@
 package kr.codingtree.plugin.example;
 
-import kr.codingtree.enummessage.MessageAssist;
+import kr.codingtree.enummessage.EnumMessage;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class TestKPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
-        MessageAssist.loadConfig(TestMessage.class, this);
+        EnumMessage.loadConfig(TestMessage.class, this);
 
         TestMessage.MESSAGE_1.console();
         TestMessage.MESSAGE_2.console("a", "c", "b", "d");
